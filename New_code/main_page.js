@@ -95,8 +95,8 @@ function injectRippleStyles() {
       position: absolute;
       top: 50%;
       left: 50%;
-      width: 1em;
-      height: 1em;
+      width: 7rem;
+      height: 7rem;
       transform: translate(-50%, -50%);
       border-radius: 50%;
       background-color:rgb(2, 82, 26);
