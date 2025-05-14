@@ -10,7 +10,7 @@ This is a classic game with a modern, responsive UI, smooth animations, and a fe
 ## 🚀 Live Demo
 
 You can try the game here:  
-🔗 **[Play Now on Netlify](https://capstone-project-cuvette1.netlify.app)**
+🔗 **[Play Now on Netlify][(https://capstone-project-cuvette1.netlify.app](https://ahamed-cuvette-capstone-1.netlify.app))**
 
 ---
 
