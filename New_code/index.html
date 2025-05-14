@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style0.css" />
+
+</head>
+
+<body>
+
+  <div class="score-title-box">
+    <div class="title">
+      <p>ROCK</p>
+      <p>PAPER</p>
+      <p>SCISSORS</p>
+    </div>
+    <div class="scores">
+      <div class="score-card">
+        <p>COMPUTER SCORE</p>
+        <h2 id="computerScore">0</h2>
+      </div>
+      <div class="score-card">
+        <p>YOUR SCORE</p>
+        <h2 id="userScore">0</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="game-container">
+    <div class="triangle-container">
+
+      <img src="../assets/Screenshot_2025-05-14_104036-removebg-preview.png"
+        style="position: absolute ; top: 70px;  rotate: 180deg; left: 65px; height: 75%;" alt="">
+
+      <div class="choice rock" onclick="playerChoice('rock')">
+        <img src="../assets/fist.png" alt="Rock">
+      </div>
+      <div class="choice paper" onclick="playerChoice('paper')">
+        <img src="../assets/hand-paper.png" alt="Paper">
+      </div>
+      <div class="choice scissors" onclick="playerChoice('scissors')">
+        <img src="../assets/scissors.png" alt="Scissors">
+      </div>
+    </div>
+
+    <div class="result-container" id="resultContainer">
+      <div class="result-content">
+        <div class="result-col">
+          <p class="pick-label">YOU PICKED</p>
+          <div id="userPick"></div>
+        </div>
+
+        <div class="result-text">
+          <h2 id="resultTitle">YOU WIN</h2>
+          <p id="resultMessage">AGAINST PC</p>
+          <button class="btn" onclick="resetGame()">PLAY AGAIN</button>
+        </div>
+
+        <div class="result-col">
+          <p class="pick-label">PC PICKED</p>
+          <div id="computerPick"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="btn-group">
+    <button class="btn rule-toggle" onclick="toggleRules()">RULES</button>
+    <button class="btn next-btn" id="nextBtn" onclick="goToCongrats()">NEXT</button>
+  </div>
+
+  <div class="popup" id="rulesBox">
+    <div class="close-btn" onclick="toggleRules()">X</div>
+    <h3>Game Rules</h3>
+    <ul>
+      <li>Rock beats scissors, scissors beats paper, and paper beats rock.</li>
+      <li>Agree ahead of time how you'll count: "rock, paper, scissors, shoot".</li>
+      <li>Use this game to settle minor decisions or just have fun!</li>
+      <li>If same hand is played, repeat until there's a winner.</li>
+    </ul>
+  </div>
+
+  <script src="main_page.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Congrats Page</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <img src="../assets/Screenshot_2025-05-13_224106-removebg-preview.png" class="trophy-image" alt="Trophy" />
+
+    <h1 class="congrats-title">HURRAY!!</h1>
+    <h2 class="win-message">YOU WON THE GAME</h2>
+
+    <div id="rules-modal" class="rules-modal">
+        <div class="close-icon cross">X</div>
+        <h3>Game Rules</h3>
+        <ul>
+            <li>Rock beats scissors, scissors beats paper, and paper beats rock.</li>
+            <li>Agree ahead of time how you'll count: “rock, paper, scissors, shoot”.</li>
+            <li>Use this game to settle minor decisions or just have fun!</li>
+            <li>If same hand is played, repeat until there's a winner.</li>
+        </ul>
+    </div>
+
+    <div class="button-group">
+        <button class="btn play-again" onclick="window.location.href = './index.html';">PLAY AGAIN</button>
+    </div>
+
+    <button class="btn rules-button rules">RULES</button>
+
+    <script src="congrats.js"></script>
+</body>
+
+</html>
